@@ -14,7 +14,6 @@
 		4C78EBBA219C6D2A00FEBC52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C78EBB8219C6D2A00FEBC52 /* LaunchScreen.storyboard */; };
 		4C78EBC3219C6D7100FEBC52 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBC2219C6D7100FEBC52 /* libc++.tbd */; };
 		4C78EBC5219C6D9C00FEBC52 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBC4219C6D9C00FEBC52 /* CoreBluetooth.framework */; };
-		4C78EBCB219C6DDC00FEBC52 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBC6219C6DDC00FEBC52 /* ExternalAccessory.framework */; };
 		4C78EBCC219C6DDC00FEBC52 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBC7219C6DDC00FEBC52 /* CFNetwork.framework */; };
 		4C78EBCD219C6DDC00FEBC52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBC8219C6DDC00FEBC52 /* Foundation.framework */; };
 		4C78EBCE219C6DDC00FEBC52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBC9219C6DDC00FEBC52 /* SystemConfiguration.framework */; };
@@ -22,6 +21,7 @@
 		4C78EBD6219C6F7F00FEBC52 /* IHS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBD5219C6F7F00FEBC52 /* IHS.framework */; };
 		4C78EBD8219C700700FEBC52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBD7219C700700FEBC52 /* AVFoundation.framework */; };
 		4C78EBDA219C701D00FEBC52 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78EBD9219C701D00FEBC52 /* CoreMotion.framework */; };
+		4C78EBDC219C71F400FEBC52 /* IHSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C78EBDB219C71F400FEBC52 /* IHSController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,6 @@
 		4C78EBBB219C6D2A00FEBC52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C78EBC2219C6D7100FEBC52 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		4C78EBC4219C6D9C00FEBC52 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		4C78EBC6219C6DDC00FEBC52 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		4C78EBC7219C6DDC00FEBC52 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4C78EBC8219C6DDC00FEBC52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C78EBC9219C6DDC00FEBC52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -43,6 +42,8 @@
 		4C78EBD5219C6F7F00FEBC52 /* IHS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IHS.framework; sourceTree = "<group>"; };
 		4C78EBD7219C700700FEBC52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4C78EBD9219C701D00FEBC52 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4C78EBDB219C71F400FEBC52 /* IHSController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHSController.swift; sourceTree = "<group>"; };
+		4C78EBDD219C79FD00FEBC52 /* Swift Headset X.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Swift Headset X.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +55,6 @@
 				4C78EBCC219C6DDC00FEBC52 /* CFNetwork.framework in Frameworks */,
 				4C78EBC5219C6D9C00FEBC52 /* CoreBluetooth.framework in Frameworks */,
 				4C78EBDA219C701D00FEBC52 /* CoreMotion.framework in Frameworks */,
-				4C78EBCB219C6DDC00FEBC52 /* ExternalAccessory.framework in Frameworks */,
 				4C78EBCD219C6DDC00FEBC52 /* Foundation.framework in Frameworks */,
 				4C78EBD6219C6F7F00FEBC52 /* IHS.framework in Frameworks */,
 				4C78EBCF219C6DDC00FEBC52 /* MobileCoreServices.framework in Frameworks */,
@@ -86,8 +86,10 @@
 		4C78EBAE219C6D2800FEBC52 /* Swift Headset X */ = {
 			isa = PBXGroup;
 			children = (
+				4C78EBDD219C79FD00FEBC52 /* Swift Headset X.entitlements */,
 				4C78EBAF219C6D2800FEBC52 /* AppDelegate.swift */,
 				4C78EBB1219C6D2800FEBC52 /* ViewController.swift */,
+				4C78EBDB219C71F400FEBC52 /* IHSController.swift */,
 				4C78EBB3219C6D2800FEBC52 /* Main.storyboard */,
 				4C78EBB6219C6D2A00FEBC52 /* Assets.xcassets */,
 				4C78EBB8219C6D2A00FEBC52 /* LaunchScreen.storyboard */,
@@ -104,7 +106,6 @@
 				4C78EBD7219C700700FEBC52 /* AVFoundation.framework */,
 				4C78EBD0219C6DE900FEBC52 /* IHS */,
 				4C78EBC7219C6DDC00FEBC52 /* CFNetwork.framework */,
-				4C78EBC6219C6DDC00FEBC52 /* ExternalAccessory.framework */,
 				4C78EBC8219C6DDC00FEBC52 /* Foundation.framework */,
 				4C78EBCA219C6DDC00FEBC52 /* MobileCoreServices.framework */,
 				4C78EBC9219C6DDC00FEBC52 /* SystemConfiguration.framework */,
@@ -154,6 +155,14 @@
 				TargetAttributes = {
 					4C78EBAB219C6D2800FEBC52 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -194,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C78EBB2219C6D2800FEBC52 /* ViewController.swift in Sources */,
+				4C78EBDC219C71F400FEBC52 /* IHSController.swift in Sources */,
 				4C78EBB0219C6D2800FEBC52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

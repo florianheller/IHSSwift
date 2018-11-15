@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,15 +13,68 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Headset_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5p-aL-vc6">
+                                <rect key="frame" x="31" y="41" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaU-O0-MxG">
+                                <rect key="frame" x="93" y="41" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuH-iq-ol1">
+                                <rect key="frame" x="16" y="70" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94M-CT-UvX">
+                                <rect key="frame" x="93" y="70" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-iU-snF">
+                                <rect key="frame" x="16" y="99" width="59" height="30"/>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="connectHeadset:" destination="llR-5f-rdf" eventType="touchUpInside" id="ZiZ-yi-mul"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CuH-iq-ol1" firstAttribute="top" secondItem="M5p-aL-vc6" secondAttribute="bottom" constant="8" id="7fe-uN-fmv"/>
+                            <constraint firstItem="M5p-aL-vc6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="ACE-Mf-6mj"/>
+                            <constraint firstItem="CuH-iq-ol1" firstAttribute="trailing" secondItem="M5p-aL-vc6" secondAttribute="trailing" id="AMA-1o-OXh"/>
+                            <constraint firstItem="Wjd-iU-snF" firstAttribute="top" secondItem="CuH-iq-ol1" secondAttribute="bottom" constant="8" id="Bbe-MA-jxz"/>
+                            <constraint firstItem="94M-CT-UvX" firstAttribute="leading" secondItem="CuH-iq-ol1" secondAttribute="trailing" constant="8" id="LrN-j9-sAI"/>
+                            <constraint firstItem="94M-CT-UvX" firstAttribute="centerY" secondItem="CuH-iq-ol1" secondAttribute="centerY" id="M0Z-vI-uQw"/>
+                            <constraint firstItem="CuH-iq-ol1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WgZ-aU-j3z"/>
+                            <constraint firstItem="94M-CT-UvX" firstAttribute="leading" secondItem="xaU-O0-MxG" secondAttribute="leading" id="df2-up-fVx"/>
+                            <constraint firstItem="xaU-O0-MxG" firstAttribute="centerY" secondItem="M5p-aL-vc6" secondAttribute="centerY" id="efN-9W-zvB"/>
+                            <constraint firstItem="Wjd-iU-snF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="npk-0h-cAf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="llR-5f-rdf" customClass="IHSController" customModule="Swift_Headset_X" customModuleProvider="target">
+                    <connections>
+                        <outlet property="connectButton" destination="Wjd-iU-snF" id="T2A-ES-K1U"/>
+                        <outlet property="headingLabel" destination="94M-CT-UvX" id="rR4-9C-zpD"/>
+                        <outlet property="statusLabel" destination="xaU-O0-MxG" id="LAY-aJ-udd"/>
+                        <outlet property="viewController" destination="BYZ-38-t0r" id="r5o-SX-4vb"/>
+                    </connections>
+                </customObject>
             </objects>
         </scene>
     </scenes>
